@@ -1,0 +1,60 @@
+/* USING CSS VARIABLES!  */
+/* MAIN COLOURS  */
+:root {
+  --primary: #84bc9c;
+  --secondary: #0a2342;
+  --dark: #2ca58d;
+  --light: #fffdf7;
+  --other: #f46197;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "nunito";
+}
+.container {
+  background-image: url(stars.jpeg);
+  box-shadow: 0px 2px 64px rgb(0, 0, 0, 1);
+  opacity: 0.8;
+  z-index: 0;
+}
+body {
+  background-color: var(--light);
+}
+.card-title {
+  font-size: 4rem;
+  background-image: url(stars.jpeg);
+}
+.card-text {
+  color: var(--dark);
+  background-image: url(stars.jpeg);
+}
+.display-5 {
+  font-size: 6rem;
+  color: var(--primary);
+  background-image: url(stars.jpeg);
+}
+.humidity {
+  background-image: url(stars.jpeg);
+
+  color: var(--other);
+}
+
+hr {
+  color: var(--dark);
+}
+.type {
+  background-image: url(stars.jpeg);
+
+  font-size: 4rem;
+}
+.maxmin {
+  background-image: url(stars.jpeg);
+
+  font-size: 2rem;
+}
+hr {
+  border-width: px;
+}
