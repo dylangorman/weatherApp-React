@@ -6,6 +6,7 @@ function App() {
   const [lat, setLat] = useState([]); //latitude
   const [long, setLong] = useState([]); //longitute
   const [data, setData] = useState([]); //weather Data
+  console.log(process.env);
   let componentMounted = true;
 
   const fetchData = async () => {
@@ -18,7 +19,7 @@ function App() {
     });
     //FETCH API
     const response = await fetch(
-      `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=4b809fd25e1d1b379f82607f626a861a`
+      `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${process.env.REACT_APP_API_KEY}`
     );
     if (componentMounted) {
       setData(await response.json());
